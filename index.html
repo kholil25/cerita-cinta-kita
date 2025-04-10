@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cerita Cinta Kita 💖</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;500;700&family=Parisienne&family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+<body>
+  <!-- Container untuk animasi hati latar belakang -->
+  <div class="love-animation" id="loveAnimation"></div>
+
+  <div class="container">
+    <h1>Untuk Kamu yang Spesial <span class="heartbeat">💖</span></h1>
+
+    <div class="nav">
+      <button onclick="tampilkan('gambar')">Gambar Kita</button>
+      <button onclick="tampilkan('perjalanan')">Perjalanan Cinta</button>
+      <button onclick="tampilkan('pesan')">Pesan Untukmu</button>
+    </div>
+
+    <!-- Wrapper untuk semua konten agar layout lebih stabil -->
+    <div class="content-wrapper">
+      <div id="gambar" class="konten aktif">
+        <p class="judul-section">Kenangan kita yang terabadikan <span class="love-pulse"></span></p>
+        <div class="gallery">
+          <img src="gambar/foto1.jpg" alt="Kenangan kita">
+          <img src="gambar/foto2.jpg" alt="Kenangan kita">
+        </div>
+        <div class="gallery-divider"></div>
+        <div class="gallery">
+          <img src="gambar/foto3.jpg" alt="Kenangan kita">
+          <img src="gambar/foto4.jpg" alt="Kenangan kita">
+          <img src="gambar/foto5.jpg" alt="Kenangan kita">
+        </div>
+      </div>
+
+      <div id="perjalanan" class="konten">
+        <p class="judul-section">Perjalanan Indah Kita <span class="love-pulse"></span></p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">14 Februari 2023</span><br>
+            Pertama kali aku jatuh cinta padamu. Dunia terasa begitu indah sejak hari itu.
+          </div>
+          
+          <div class="timeline-item">
+            <span class="timeline-date">10 Maret 2023</span><br>
+            Kita jalan bareng pertama kali. Waktu seakan berhenti saat itu.
+          </div>
+          
+          <div class="timeline-item">
+            <span class="timeline-date">25 Desember 2023</span><br>
+            Kamu bilang "aku juga cinta kamu". Kata-kata terindah yang pernah kudengar.
+          </div>
+          
+          <div class="timeline-item">
+            <span class="timeline-date">14 Februari 2024</span><br>
+            Kita rayakan cinta bersama. Hari yang akan selalu kukenang.
+          </div>
+        </div>
+      </div>
+
+      <div id="pesan" class="konten">
+        <p class="judul-section">Pesan Untukmu <span class="love-pulse"></span></p>
+        <p class="isi-pesan">
+          Aku tidak pernah menyangka akan menemukan seseorang seistimewa dirimu.<br>
+          Terima kasih telah hadir dan memberi warna dalam hidupku.<br>
+          Terima kasih atas kesabaranmu yang tiada batas.<br>
+          Kamu adalah rumah terhangat di hatiku, tempat aku selalu ingin kembali.<br>
+          Semoga cinta ini tumbuh semakin indah, seperti bunga yang mekar di musim semi.<br>
+          Selamanya, hatiku untukmu.
+        </p>
+      </div>
+    </div>
+
+    <button id="musicButton" onclick="toggleMusik()">Putar Melodi Cinta 🎵</button>
+  </div>
+
+  <audio id="bgMusic" src="music.mp3" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
